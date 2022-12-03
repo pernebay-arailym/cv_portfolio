@@ -28,13 +28,13 @@ const Profile = () => {
                 <Typical
                   loop={Infinity}
                   steps={[
-                    "Economist 💶",
+                    "Economist 📊",
                     1000,
                     "Marketing 📈",
                     1000,
                     "Business 💻",
                     1000,
-                    "Developer 👩🏻‍🏫",
+                    "Developer 👩‍💻",
                   ]}
                 />
               </h1>
