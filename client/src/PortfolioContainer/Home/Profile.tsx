@@ -1,4 +1,5 @@
 import Typical from "react-typical";
+import "./Profile.css";
 
 const Profile = () => {
   return (
@@ -6,21 +7,14 @@ const Profile = () => {
       <div className="profile-parent">
         <div className="profile-details">
           <div className="colz">
-            <a href="#">
-              <i className="fa fa-facebook-square"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/arailympernebay/">
-              <i className="fa fa-linkedin-square"></i>
-            </a>
-            <a href="https://www.instagram.com/arailymbkz/">
-              <i className="fa fa-instagram"></i>
-            </a>
-            <a href="#">
-              <i className="fa fa-youtube-square"></i>
-            </a>
-            <a href="#">
-              <i className="fa fa-twitter"></i>
-            </a>
+            <div className="colz-icon">
+              <a href="https://www.linkedin.com/in/arailympernebay/">
+                <i className="fa fa-linkedin-square"></i>
+              </a>
+              <a href="https://www.instagram.com/arailymbkz/">
+                <i className="fa fa-instagram"></i>
+              </a>
+            </div>
           </div>
 
           <div className="profile-details-name">
@@ -55,6 +49,9 @@ const Profile = () => {
               <button className="btn highlighted-btn">Download CV</button>
             </a>
           </div>
+        </div>
+        <div className="profile-picture">
+          <div className="profile-picture-background"></div>
         </div>
       </div>
     </div>
