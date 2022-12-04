@@ -61,9 +61,9 @@ export default function Testimonial(props: any) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      I patronized Ehizeex and when He delivered, I honestly
-                      fell in love with the project He is a very honest guy and
-                      he delivers ontime.
+                      When she delivered, I honestly fell in love with the
+                      project She is a very honest person and she delivers
+                      ontime.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -97,9 +97,9 @@ export default function Testimonial(props: any) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      It was nice hiring this guy for my e-commerce project.He
-                      delivered even more than i can imagine. I recommend him
-                      for you.
+                      It was nice hiring this person for my e-commerce project.
+                      She delivered even more than i can imagine. I recommend
+                      her for you.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -132,8 +132,8 @@ export default function Testimonial(props: any) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      When he delivered my job, my head spinned, it was so nice
-                      and he implemented every functionality i requested for.
+                      When she delivered my job, my head spinned, it was so nice
+                      and she implemented every functionality i requested for.
                       Thank you.
                       <i className="fa fa-quote-right" />
                     </p>
@@ -167,9 +167,9 @@ export default function Testimonial(props: any) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      This guy is incredibly awesome, I hired him and when He
-                      delivered, I honestly fell in love with the project. He is
-                      indeed a great guy,
+                      This person is incredibly awesome, I hired her and when
+                      she delivered, I honestly fell in love with the project.
+                      She is indeed a great specialist,
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">

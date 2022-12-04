@@ -53,7 +53,7 @@ const Resume = (props: any) => {
 
   //here we have
   const programmingSkillsDetails = [
-    { skill: "JavaScript", ratingPercentage: 85 },
+    { skill: "Marketing", ratingPercentage: 85 },
     { skill: "React JS", ratingPercentage: 85 },
     { skill: "React Native", ratingPercentage: 85 },
     { skill: "Express JS", ratingPercentage: 89 },
@@ -220,7 +220,7 @@ const Resume = (props: any) => {
       >
         <img
           className="bullet-logo"
-          src={require(`../../assets/Resume/${bullet.logoSrc}`).default}
+          src={require(`../../assets/Resume/${bullet.logoSrc}`)}
           alt="B"
         />
         <span className="bullet-label">{bullet.label}</span>
