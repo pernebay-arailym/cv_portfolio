@@ -16,9 +16,30 @@
   max-width: 100%;
   height: 130px;
 }
+@media only screen and (min-width: 1920px) {
+  .footer-parent {
+    max-width: none;
+  }
+  .footer-parent img {
+    height: 200px;
+  }
+}
 @media only screen and (max-width: 1110px) {
   .footer-parent {
     display: flex;
     align-items: flex-end;
+  }
+  .footer-parent img {
+    height: 80px;
+  }
+}
+@media only screen and (max-width: 678px) {
+  .footer-parent img {
+    height: 45px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .footer-parent img {
+    height: 25px;
   }
 }
