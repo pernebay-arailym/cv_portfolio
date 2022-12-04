@@ -4,6 +4,7 @@ export const TOTAL_SCREENS = [
   {
     screen_name: "Home",
     component: Home,
+    alreadyRendered: false,
   },
 ];
 export const GET_SCREEN_INDEX = (screen_name: string) => {
