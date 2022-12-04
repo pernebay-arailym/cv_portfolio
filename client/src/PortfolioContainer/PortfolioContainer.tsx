@@ -6,6 +6,7 @@ const PortfolioContainer = () => {
       screen.component ? (
         <screen.component
           screenName={screen.screen_name}
+          key={screen.screen_name}
           id={screen.screen_name}
         />
       ) : (
