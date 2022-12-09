@@ -13,7 +13,7 @@ export default function AboutMe(props: any) {
 
   const SCREEN_CONSTSANTS = {
     description:
-      "Full stack web and mobile developer with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficiency. Strong professional with a BSC willing to be an asset for an organization.",
+      "Marketing Manager, Business Development Manager and Business Specialist roles.",
     highlights: {
       bullets: [
         "Full Stack web and mobile development",
@@ -62,7 +62,10 @@ export default function AboutMe(props: any) {
                 {" "}
                 Hire Me{" "}
               </button>
-              <a href="ehizcv.pdf" download="Ehiedu Ehizcv.pdf">
+              <a
+                href="Arailym_Pernebay__CV.pdf"
+                download="Arailym_Pernebay__CV.pdf"
+              >
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>
             </div>
