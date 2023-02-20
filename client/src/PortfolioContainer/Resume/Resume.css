@@ -95,9 +95,9 @@
 .resume-screen-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  height: 360px;
+  height: 356px;
   width: 100%;
+  overflow: scroll;
 }
 
 .resume-heading {
@@ -124,7 +124,7 @@
 .heading-bullet {
   position: absolute;
   left: -30px;
-  height: 15px;
+  height: 13px;
   width: 15px;
   top: 5px;
   border-radius: 50%;
@@ -135,7 +135,7 @@
   font-size: 14px;
   font-family: "Poppins SemiBold";
   color: var(--black);
-  margin: 10px 0 0 0;
+  margin: 0;
 }
 
 .resume-heading-description {
@@ -145,10 +145,11 @@
 
 .heading-date {
   background-color: #ff5823;
-  padding: 4px 12px;
+  padding: 0 12px;
   font-size: 14px;
   border-radius: 14px;
   color: var(--white);
+  align-self: center;
 }
 
 .skill-parent {

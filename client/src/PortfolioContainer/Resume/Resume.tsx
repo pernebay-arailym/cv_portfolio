@@ -91,23 +91,19 @@ const Resume = (props: any) => {
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={"University of Legon Accra, Ghana"}
-        subHeading={"BACHELOR OF SCIENCE INFORMATION TECHNOLOGY"}
-        fromDate={"2014"}
-        toDate={"2018"}
-      />
-
-      <ResumeHeading
-        heading={"National Youth Service Corps"}
-        subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
-        fromDate={"2019"}
-        toDate={"2020"}
+        heading={"Szechenyi Istvan University, Gyor, Hungary"}
+        subHeading={`Master's degree of International Economy and Business`}
+        description="Holder of Stipendium Hungaricum merit-based Scholarship"
+        fromDate={"2021 "}
+        toDate={"2023"}
       />
       <ResumeHeading
-        heading={"High School "}
-        subHeading={"Command Secondary School Mbiri"}
-        fromDate={"2007"}
-        toDate={"2012"}
+        heading={
+          "Kazakh national university named Al-Farabi, Almaty, Kazakhstan"
+        }
+        subHeading={`Bachelor of Marketing at Department of Business Technology`}
+        fromDate={"2017"}
+        toDate={"2021"}
       />
     </div>,
 
@@ -115,34 +111,103 @@ const Resume = (props: any) => {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Ehizeex Technoloy"}
-          subHeading={"FULL STACK DEVELOPER INTERN"}
-          fromDate={"2021"}
-          toDate={"Present"}
+          heading={"HESPERIUM MARKETING, UK, London"}
+          subHeading={"Account executive"}
+          fromDate={"November 2021"}
+          toDate={"January 2022"}
         />
         <div className="experience-description">
-          <span className="resume-description-text">
-            Currently working as MERN stack web and mobile developer and also an
-            online instructor on udemy.
-          </span>
+          <span className="resume-description-text">Responsibilities :</span>
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            - Developed an ecommerce website for client with the dashboard for
-            managing the products, managing reviews, users, payment etc. .
+            - Provide marketing service;
           </span>
           <br />
           <span className="resume-description-text">
-            - Integrated the web app with backend services to create new user
-            onboarding application with dynamic form content.{" "}
+            - Daily connection with 15 clients;
           </span>
           <br />
           <span className="resume-description-text">
-            - I stretch my mental capacity to develope UI as per the given
-            designs.
+            - Call and conclude an agreement with foreign companies;
           </span>
+          <br />
           <br />
         </div>
+      </div>
+
+      <div className="experience-container">
+        <ResumeHeading
+          heading={"IFORTIS WORLWIDE, American Ruler Private Limited, India"}
+          subHeading={"Marketer Sales Intern"}
+          fromDate={"September 2021"}
+          toDate={"October 2021"}
+        />
+        <div className="experience-description">
+          <span className="resume-description-text">Responsibilities :</span>
+        </div>
+        <div className="experience-description">
+          <span className="resume-description-text">
+            - Created presentations for busines subjects
+          </span>
+          <br />
+          <span className="resume-description-text">
+            - Assisted with business plan development
+          </span>
+        </div>
+        <br />
+      </div>
+
+      <div className="experience-container">
+        <ResumeHeading
+          heading={"AiPlus educational center, Nur-Sultan, Kazakhstan"}
+          subHeading={"English language trener"}
+          fromDate={"November 2020"}
+          toDate={"August 2021"}
+        />
+        <div className="experience-description">
+          <span className="resume-description-text">Responsibilities :</span>
+        </div>
+        <div className="experience-description">
+          <span className="resume-description-text">
+            - Preparing 4-5-6 grade pupils for national exam for NIS and RPMS
+          </span>
+          <br />
+          <span className="resume-description-text">
+            - Work with psychological mindset of children
+          </span>
+          <br />
+          <span className="resume-description-text">
+            - Increased the results of monthly tests by 25%
+          </span>
+        </div>
+      </div>
+
+      <div className="experience-container">
+        <ResumeHeading
+          heading={"Alyssa a Hogan Enterprise, Florida, USA"}
+          subHeading={"Marketer/Content writer intern"}
+          fromDate={"July 2020"}
+          toDate={"August 2020"}
+        />
+        <div className="experience-description">
+          <span className="resume-description-text">Responsibilities :</span>
+        </div>
+        <div className="experience-description">
+          <span className="resume-description-text">
+            - Conducted market research and analyzed current tends
+          </span>
+          <br />
+          <span className="resume-description-text">
+            - Created content for social media platforms, including LinkedIn and
+            Facebook
+          </span>
+          <br />
+          <span className="resume-description-text">
+            - Assisted with business plan development
+          </span>
+        </div>
+        <br />
       </div>
     </div>,
 
