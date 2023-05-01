@@ -9,7 +9,7 @@
 
 .resume-card {
   display: flex;
-  height: 360px;
+  height: 400px;
   width: 1000px;
   /* margin: 80px 0; */
 }
@@ -24,7 +24,8 @@
   flex-grow: 1;
   width: 600px;
   overflow: hidden;
-  padding: 0 0 0 80px;
+  padding: 20px 10px 10px 80px;
+  border: 1px solid #eee;
 }
 
 .experience-description {
@@ -95,7 +96,7 @@
 .resume-screen-container {
   display: flex;
   flex-direction: column;
-  height: 356px;
+  height: 394px; /* offsetHeight depended */
   width: 100%;
   overflow: scroll;
 }
