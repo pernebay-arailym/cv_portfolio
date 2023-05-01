@@ -98,127 +98,102 @@ const Resume = (props: any) => {
     },
   ];
 
+  const workExperienceDetails = [
+    {
+      heading: "HESPERIUM MARKETING, UK, London",
+      subHeading: "Account executive",
+      duration: { fromDate: "November 2021 ", toDate: "January 2022" },
+      responsibilities: [
+        "- Provide marketing service;",
+        "- Daily connection with 15 clients;",
+        "- Call and conclude an agreement with foreign companies;",
+      ],
+    },
+    {
+      heading: "IFORTIS WORLWIDE, American Ruler Private Limited, India",
+      subHeading: "Marketer Sales Intern",
+      duration: { fromDate: "September 2021", toDate: "October 2021" },
+      responsibilities: [
+        "- Created presentations for busines subjects",
+        "- Assisted with business plan development",
+      ],
+    },
+    {
+      heading: "AiPlus educational center, Nur-Sultan, Kazakhstan",
+      subHeading: "English language trener",
+      duration: { fromDate: "November 2020", toDate: "August 2021" },
+      responsibilities: [
+        "- Preparing 4-5-6 grade pupils for national exam for NIS and RPMS",
+        "- Work with psychological mindset of children",
+        "- Increased the results of monthly tests by 25%",
+      ],
+    },
+    {
+      heading: "Alyssa a Hogan Enterprise, Florida, USA",
+      subHeading: "Marketer/Content writer intern",
+      duration: { fromDate: "July 2020", toDate: "August 2020" },
+      responsibilities: [
+        "- Conducted market research and analyzed current tends",
+        "- Created content for social media platforms, including LinkedIn and Facebook",
+        "- Assisted with business plan development",
+      ],
+    },
+  ];
+
+  const educationDetails = [
+    {
+      heading: "Szechenyi Istvan University, Gyor, Hungary",
+      subHeading: `Master's degree of International Economy and Business`,
+      duration: { fromDate: "2021 ", toDate: "2023" },
+      description: "Holder of Stipendium Hungaricum merit-based Scholarship",
+    },
+    {
+      heading: "Kazakh national university named Al-Farabi, Almaty, Kazakhstan",
+      subHeading: `Bachelor of Marketing at Department of Business Technology`,
+      duration: { fromDate: "2017 ", toDate: "2021" },
+      description: "Holder of Kazakhstan State Scholarship",
+    },
+  ];
+
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
-      <ResumeHeading
-        heading={"Szechenyi Istvan University, Gyor, Hungary"}
-        subHeading={`Master's degree of International Economy and Business`}
-        description="Holder of Stipendium Hungaricum merit-based Scholarship"
-        fromDate={"2021 "}
-        toDate={"2023"}
-      />
-      <ResumeHeading
-        heading={
-          "Kazakh national university named Al-Farabi, Almaty, Kazakhstan"
-        }
-        subHeading={`Bachelor of Marketing at Department of Business Technology`}
-        fromDate={"2017"}
-        toDate={"2021"}
-      />
+      {educationDetails.map((detail) => (
+        <ResumeHeading
+          heading={detail.heading}
+          subHeading={detail.subHeading}
+          description={detail.description}
+          fromDate={detail.duration.fromDate}
+          toDate={detail.duration.toDate}
+        />
+      ))}
     </div>,
 
     /* WORK EXPERIENCE */
     <div className="resume-screen-container" key="work-experience">
-      <div className="experience-container">
-        <ResumeHeading
-          heading={"HESPERIUM MARKETING, UK, London"}
-          subHeading={"Account executive"}
-          fromDate={"November 2021"}
-          toDate={"January 2022"}
-        />
-        <div className="experience-description">
-          <span className="resume-description-text">Responsibilities :</span>
+      {workExperienceDetails.map((workDetail) => (
+        <div className="experience-container">
+          <ResumeHeading
+            heading={workDetail.heading}
+            subHeading={workDetail.subHeading}
+            fromDate={workDetail.duration.fromDate}
+            toDate={workDetail.duration.toDate}
+          />
+          <div className="experience-description">
+            <span className="resume-description-text">Responsibilities :</span>
+          </div>
+          <div className="experience-description">
+            {workDetail.responsibilities.map((responsibility) => (
+              <>
+                <span className="resume-description-text">
+                  {responsibility}
+                </span>
+                <br />
+              </>
+            ))}
+            <br />
+          </div>
         </div>
-        <div className="experience-description">
-          <span className="resume-description-text">
-            - Provide marketing service;
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - Daily connection with 15 clients;
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - Call and conclude an agreement with foreign companies;
-          </span>
-          <br />
-          <br />
-        </div>
-      </div>
-
-      <div className="experience-container">
-        <ResumeHeading
-          heading={"IFORTIS WORLWIDE, American Ruler Private Limited, India"}
-          subHeading={"Marketer Sales Intern"}
-          fromDate={"September 2021"}
-          toDate={"October 2021"}
-        />
-        <div className="experience-description">
-          <span className="resume-description-text">Responsibilities :</span>
-        </div>
-        <div className="experience-description">
-          <span className="resume-description-text">
-            - Created presentations for busines subjects
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - Assisted with business plan development
-          </span>
-        </div>
-        <br />
-      </div>
-
-      <div className="experience-container">
-        <ResumeHeading
-          heading={"AiPlus educational center, Nur-Sultan, Kazakhstan"}
-          subHeading={"English language trener"}
-          fromDate={"November 2020"}
-          toDate={"August 2021"}
-        />
-        <div className="experience-description">
-          <span className="resume-description-text">Responsibilities :</span>
-        </div>
-        <div className="experience-description">
-          <span className="resume-description-text">
-            - Preparing 4-5-6 grade pupils for national exam for NIS and RPMS
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - Work with psychological mindset of children
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - Increased the results of monthly tests by 25%
-          </span>
-        </div>
-      </div>
-
-      <div className="experience-container">
-        <ResumeHeading
-          heading={"Alyssa a Hogan Enterprise, Florida, USA"}
-          subHeading={"Marketer/Content writer intern"}
-          fromDate={"July 2020"}
-          toDate={"August 2020"}
-        />
-        <div className="experience-description">
-          <span className="resume-description-text">Responsibilities :</span>
-        </div>
-        <div className="experience-description">
-          <span className="resume-description-text">
-            - Conducted market research and analyzed current tends
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - Created content for social media platforms, including LinkedIn and
-            Facebook
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - Assisted with business plan development
-          </span>
-        </div>
-        <br />
-      </div>
+      ))}
     </div>,
 
     /* PROGRAMMING SKILLS */
@@ -316,7 +291,7 @@ const Resume = (props: any) => {
   ];
 
   const handleCarousal = (index: number) => {
-    let offsetHeight = 400;
+    let offsetHeight = 400; // .resume-screen-container  height depended
 
     let newCarousalOffset = {
       style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" },
