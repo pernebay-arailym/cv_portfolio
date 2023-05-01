@@ -42,11 +42,21 @@ const Resume = (props: any) => {
 
   /* STATIC RESUME DATA FOR THE LABELS*/
   const resumeBullets = [
-    { label: "Education", logoSrc: "education.svg" },
-    { label: "Work History", logoSrc: "work-history.svg" },
-    { label: "Programming Skills", logoSrc: "programming-skills.svg" },
-    { label: "Projects", logoSrc: "projects.svg" },
-    { label: "Interests", logoSrc: "interests.svg" },
+    { label: "Education", logoSrc: "education.svg", key: "education" },
+    {
+      label: "Work History",
+      logoSrc: "work-history.svg",
+      key: "work-experience",
+    },
+    // { label: "Programming Skills", logoSrc: "programming-skills.svg" },
+    // { label: "Projects", logoSrc: "projects.svg" },
+    { label: "Volunteering", logoSrc: "projects.svg", key: "volunteering" },
+    { label: "Interests", logoSrc: "interests.svg", key: "interests" },
+    {
+      label: "Licences & Certifications",
+      logoSrc: "programming-skills.svg",
+      key: "licences&certification",
+    },
   ];
 
   //here we have
@@ -212,7 +222,7 @@ const Resume = (props: any) => {
     </div>,
 
     /* PROGRAMMING SKILLS */
-    <div
+    /*<div
       className="resume-screen-container programming-skills-container"
       key="programming-skills"
     >
@@ -229,8 +239,10 @@ const Resume = (props: any) => {
         </div>
       ))}
     </div>,
+    */
 
     /* PROJECTS */
+    /*
     <div className="resume-screen-container" key="projects">
       {projectsDetails.map((projectsDetails, index) => (
         <ResumeHeading
@@ -242,6 +254,29 @@ const Resume = (props: any) => {
           toDate={projectsDetails.duration.toDate}
         />
       ))}
+    </div>,
+    */
+    <div className="resume-screen-container" key="volunteering">
+      <ResumeHeading
+        heading={"Community Volunteer"}
+        subHeading={"UNICEF"}
+        description={"Children"}
+        fromDate={"Sep 2020"}
+        toDate={""}
+      />
+      <ResumeHeading
+        heading={"Content Specialist, Marketer"}
+        subHeading={"Solidarity Tracks"}
+        description={"Arts and Culture"}
+        fromDate={"May 2022"}
+        toDate={"Jul 2022"}
+      />
+      <ResumeHeading
+        heading={"Volunteer"}
+        subHeading={"Synergy Global Forum"}
+        fromDate={"Oct 2018"}
+        toDate={""}
+      />
     </div>,
 
     /* Interests */
@@ -259,10 +294,29 @@ const Resume = (props: any) => {
         description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
       />
     </div>,
+
+    /* Interests */
+    <div className="resume-screen-container" key="licences&certifications">
+      <ResumeHeading
+        heading="Write Professional Emails in English"
+        subHeading={"Georgia Institure of Technology"}
+        description="Issued Jan 2021 Credential ID X8DPTL8RSSU6"
+      />
+      <ResumeHeading
+        heading="Teach English now ! Foundational principles"
+        subHeading={"Arizona State University"}
+        description="Issued Dec 2020 Credential ID BX669LRCLMYP"
+      />
+      <ResumeHeading
+        heading="English for career development"
+        subHeading={"University of Pennsylvania"}
+        description="Issued May 2020"
+      />
+    </div>,
   ];
 
   const handleCarousal = (index: number) => {
-    let offsetHeight = 360;
+    let offsetHeight = 400;
 
     let newCarousalOffset = {
       style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" },
