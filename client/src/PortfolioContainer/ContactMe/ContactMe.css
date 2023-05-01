@@ -7,14 +7,16 @@
 
 .central-form {
   max-width: 1100px;
-  padding: 10px;
+  padding: 30px;
   display: flex;
   box-shadow: 0 0px 20px -2px #1f2235;
   border-radius: 12px;
   margin: 0 auto;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   background-color: #1f2235;
+  font-size: 50px;
 }
 
 .central-form h2 {
@@ -129,7 +131,7 @@ button .load img {
   color: green;
 }
 .col i {
-  padding: 7px;
+  padding: 0 100px;
   color: #fff;
 }
 .col i:hover {
