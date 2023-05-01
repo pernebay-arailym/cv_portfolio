@@ -2,7 +2,7 @@
 
 import { terser } from "@rollup/plugin-terser";
 
-export default {
+const rollupObject = {
   input: "src/index.js",
   output: {
     file: "dist/bundle.js",
@@ -14,3 +14,5 @@ export default {
     }),
   ],
 };
+
+export default rollupObject;
