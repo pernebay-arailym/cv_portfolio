@@ -1,5 +1,6 @@
 {
   "name": "client",
+  "homepage": "http://chicoumbetov.github.io/cv-pernebay-arailym",
   "proxy": "http://localhost:5000",
   "version": "0.1.0",
   "private": true,
@@ -33,7 +34,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -54,6 +57,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-typical": "^0.1.0"
+    "@types/react-typical": "^0.1.0",
+    "gh-pages": "^5.0.0"
   }
 }
