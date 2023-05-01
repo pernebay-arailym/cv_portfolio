@@ -59,7 +59,7 @@ const Resume = (props: any) => {
     },
   ];
 
-  //here we have
+  /*
   const programmingSkillsDetails = [
     { skill: "Marketing", ratingPercentage: 85 },
     { skill: "React JS", ratingPercentage: 85 },
@@ -97,6 +97,7 @@ const Resume = (props: any) => {
         "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
     },
   ];
+  */
 
   const workExperienceDetails = [
     {

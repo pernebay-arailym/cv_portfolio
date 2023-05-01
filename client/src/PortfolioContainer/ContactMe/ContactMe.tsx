@@ -1,28 +1,29 @@
-import axios from "axios";
+/*import axios from "axios";
 import { useState } from "react";
 import { toast } from "react-toastify";
-
+*/
 // import load1 from "../../../src/images/load2.gif";
 // import imgBack from "../../../src/images/mailz.jpeg";
 import Footer from "../../PortfolioContainer/footer/Footer";
 import Typewriter from "../../components/Typewriter";
-import Animations from "../../utilities/Animations";
+// import Animations from "../../utilities/Animations";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
-import ScrollService from "../../utilities/ScrollService";
+// import ScrollService from "../../utilities/ScrollService";
 import "./ContactMe.css";
 
 export default function ContactMe(props: any) {
+  /*
   let fadeInScreenHandler = (screen: any) => {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
-
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
   const [banner, setBanner] = useState("");
   const [bool, setBool] = useState(false);
 
@@ -35,7 +36,7 @@ export default function ContactMe(props: any) {
   const handleMessage = (e: any) => {
     setMessage(e.target.value);
   };
-  console.log(name);
+
   const submitForm = async (e: any) => {
     e.preventDefault();
     try {
@@ -63,6 +64,7 @@ export default function ContactMe(props: any) {
       console.log(error);
     }
   };
+  */
 
   return (
     <div className="main-container fade-in" id={props.id || ""}>
