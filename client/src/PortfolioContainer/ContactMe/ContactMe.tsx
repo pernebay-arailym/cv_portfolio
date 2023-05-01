@@ -3,8 +3,8 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 import Typical from "react-typical";
 
-import load1 from "../../../src/images/load2.gif";
-import imgBack from "../../../src/images/mailz.jpeg";
+// import load1 from "../../../src/images/load2.gif";
+// import imgBack from "../../../src/images/mailz.jpeg";
 import Footer from "../../PortfolioContainer/footer/Footer";
 import Animations from "../../utilities/Animations";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
@@ -79,6 +79,7 @@ export default function ContactMe(props: any) {
             <i className="fa fa-instagram"></i>
           </a>
         </div>
+        {/*
         <div className="back-form">
           <div className="img-back">
             <h4>Send Your Email Here!</h4>
@@ -113,6 +114,7 @@ export default function ContactMe(props: any) {
             </div>
           </form>
         </div>
+                */}
       </div>
       <Footer />
     </div>
