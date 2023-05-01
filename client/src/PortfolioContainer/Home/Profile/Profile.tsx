@@ -1,8 +1,10 @@
-import Typical from "react-typical";
+import Typewriter from "../../../components/Typewriter";
 import ScrollService from "../../../utilities/ScrollService";
 import "./Profile.css";
 
 const Profile = () => {
+  const texts = ["Economist 📊", "Marketing 📈", "Business 💻", "Developer 👩‍💻"];
+
   return (
     <div className="profile-container">
       <div className="profile-parent">
@@ -26,18 +28,7 @@ const Profile = () => {
           <div className="profile-details-role">
             <span className="highlighted-text">
               <h1>
-                <Typical
-                  loop={Infinity}
-                  steps={[
-                    "Economist 📊",
-                    1000,
-                    "Marketing 📈",
-                    1000,
-                    "Business 💻",
-                    1000,
-                    "Developer 👩‍💻",
-                  ]}
-                />
+                <Typewriter texts={texts} delay={100} />
               </h1>
               <span className="profile-role-tagline">
                 Optimizing marketing, social media of your applications

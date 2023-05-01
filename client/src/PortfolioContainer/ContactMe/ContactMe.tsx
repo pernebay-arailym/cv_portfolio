@@ -1,11 +1,11 @@
 import axios from "axios";
 import { useState } from "react";
 import { toast } from "react-toastify";
-import Typical from "react-typical";
 
 // import load1 from "../../../src/images/load2.gif";
 // import imgBack from "../../../src/images/mailz.jpeg";
 import Footer from "../../PortfolioContainer/footer/Footer";
+import Typewriter from "../../components/Typewriter";
 import Animations from "../../utilities/Animations";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
@@ -70,7 +70,7 @@ export default function ContactMe(props: any) {
       <div className="central-form">
         <div className="col">
           <h2 className="title">
-            <Typical loop={Infinity} steps={["Get In Touch 📧", 1000]} />
+            <Typewriter texts={["Get In Touch 📧"]} delay={100} />
           </h2>{" "}
           <a href="https://www.linkedin.com/in/arailympernebay/">
             <i className="fa fa-linkedin-square"></i>
