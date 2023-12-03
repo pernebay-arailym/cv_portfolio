@@ -1,6 +1,6 @@
 {
-  "name": "client",
-  "homepage": "http://chicoumbetov.github.io/cv-pernebay-arailym",
+  "name": "cv_portfolio",
+  "homepage": "http://pernebay-arailym.github.io/cv_portfolio",
   "proxy": "http://localhost:5000",
   "version": "0.1.0",
   "private": true,
