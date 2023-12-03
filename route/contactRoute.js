@@ -15,33 +15,33 @@ router.post("/contact", (req, res) => {
     service: "Gmail",
     port: 465,
     auth: {
-      user: "edubabadigital@gmail.com",
-      pass: "use-your-correct-password-here",
+      user: "shynggys.umbetov@gmail.com",
+      pass: "chinaalmata1993rulet",
     },
   });
   let mailOptions = {
     from: data.email,
-    to: "edubabadigital@gmail.com",
+    to: "shynggys.umbetov@gmail.com",
     subject: `message from ${data.name}`,
     html: `
-
-            <h3>Informations<h3/>
-            <ul>
-            <li>Name: ${data.name}<li/>
-            <li>Email: ${data.email}<li/>
-            </ul>
-            <h3>Message</h3>
-            <p>${data.message}<p/>
-            `,
+      <h3>Informations<h3/>
+      <ul>
+      <li>Name: ${data.name}<li/>
+      <li>Email: ${data.email}<li/>
+      </ul>
+      <h3>Message</h3>
+      <p>${data.message}<p/>
+    `,
   };
 
   smtpTransporter.sendMail(mailOptions, (error) => {
     try {
       if (error)
         return res.status(400).json({ msg: "Please Fill All The Fields!" });
-      res.status(200).json({ msg: "Thank You For Contacting Ehizeex." });
+      res.status(200).json({ msg: "Thank You For Contacting Me." });
     } catch (error) {
-      if (error) return res.status(500).json({ msg: "There is server error" });
+      if (error)
+        return res.status(500).json({ msg: `There is server error: ${error}` });
     }
   });
 });
